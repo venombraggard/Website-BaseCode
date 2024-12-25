@@ -1,0 +1,106 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   body {
+    background: #222 url("/img/pexels-4254548-crop2.jpg"); /*Replace with your own background image.*/
+    background-size: cover;
+      background-attachment: fixed;
+    background-position:center;
+      background-size: cover;
+      color: white;
+      font-size: 13.5px;
+      font-family: "Open Sans", sans-serif;
+    }
+    
+  a {
+    color: #33c1ff;
+    }
+    
+  a:hover {
+    color: #95dfff;
+    }
+    
+  .links {
+    border-top: 1px solid #ccc;
+    background: rgb(238, 238, 238, 0.05);
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style-type:none;
+    text-align: center;
+    }
+    
+  /*For the first link in the links bar*/
+  .link-first {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding: 2px;
+    padding-right: 11px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    }
+    
+  .link {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    }
+    
+  /*For the last link in the links bar*/
+  .link-last {
+    display: inline-block;
+    padding: 2px;
+    padding-left: 9px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    }
+  
+  .main {
+    margin: 0 auto;
+    width: 500px;
+    background: rgb(10, 10, 10, 0.9);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    /*Quick guide to box-shadow:
+      First two numbers are vertical and horizontal offset.
+      Third number is how far to spread the fuzzy effect.
+      Fourth number is how much solid border/shadow there should be before the fuzzy effect begins.
+    */
+    box-shadow: 0px 0px 15px 2px #42c6ff;
+    }
+  
+  .main-inner {
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+    
+  /*Prevent image overflow*/  
+  .main img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+  .footer {
+    margin: 0 auto;
+    padding: 15px;
+    padding-top: 0px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 12px;
+    }
+  
+  /*Mobile compatibility*/
+  @media(orientation: portrait) {
+      .main {
+        width: 80%;
+        }
+    }
